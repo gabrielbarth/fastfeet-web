@@ -2,24 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
 
+import AuthLayout from '~/pages/_layouts/auth';
 import DefaultLayout from '~/pages/_layouts/default';
-import SigIn from '../pages/SignIn';
 
-export default function RouteWrappepr({
+import { store } from '~/store';
+
+export default function RouteWrapper({
   component: Component,
   isPrivate,
   ...rest
 }) {
-  const signed = false;
+  const { signed } = store.getState().auth;
 
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
   }
+
   if (signed && !isPrivate) {
     return <Redirect to="/deliveries" />;
   }
 
-  const Layout = signed ? DefaultLayout : SigIn;
+  const Layout = signed ? DefaultLayout : AuthLayout;
 
   return (
     <Route
@@ -31,15 +34,14 @@ export default function RouteWrappepr({
       )}
     />
   );
-  // return <Route {...rest} component={Component} />
 }
 
-RouteWrappepr.propTypes = {
+RouteWrapper.propTypes = {
   isPrivate: PropTypes.bool,
   component: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
     .isRequired,
 };
 
-RouteWrappepr.defaultProps = {
+RouteWrapper.defaultProps = {
   isPrivate: false,
 };

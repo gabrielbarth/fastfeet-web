@@ -38,7 +38,8 @@ module.exports = {
   'no-param-reassign': 'off',
   'react/jsx-props-no-spreading': 'off',
   'react-hooks/rules-of-hooks': 'error',
-  'react-hooks/exhaustive-deps': 'warn'
+  'react-hooks/exhaustive-deps': 'warn',
+  'no-nested-ternary' : 'off'
   },
   settings: {
     'import/resolver': {
