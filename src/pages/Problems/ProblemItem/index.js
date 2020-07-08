@@ -31,7 +31,7 @@ export default function ProblemItem({ data, updateProblems }) {
 
   return (
     <Container>
-      <small>#{data.id}</small>
+      <small>#{data.delivery.id}</small>
       <small>{data.description}</small>
       <More
         contentStyle={{
@@ -64,6 +64,7 @@ ProblemItem.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    delivery: PropTypes.objectOf,
   }).isRequired,
   updateProblems: PropTypes.func.isRequired,
 };

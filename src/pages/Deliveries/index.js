@@ -20,10 +20,10 @@ export default function Delivery() {
     return data.map((delivery) => ({
       ...delivery,
       start_dateFormated: delivery.start_date
-        ? format(parseISO(delivery.start_date), 'dd/MM/yyyy')
+        ? format(parseISO(delivery.start_date), 'MMMM dd, yyyy')
         : null,
       end_dateFormated: delivery.end_date
-        ? format(parseISO(delivery.end_date), 'dd/MM/yyyy')
+        ? format(parseISO(delivery.end_date), 'MMMM dd, yyyy')
         : null,
     }));
   }
@@ -52,11 +52,12 @@ export default function Delivery() {
     const data = formatDates(response.data);
 
     setDeliveries(data);
+    console.log(response.data);
   }
 
   useEffect(() => {
     loadDeliveries();
-	}, [page]); //eslint-disable-line
+  }, [page]); //eslint-disable-line
 
   return (
     <Container>

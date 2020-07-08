@@ -5,8 +5,8 @@ export const Container = styled.div`
   flex-direction: column;
 
   img {
-    height: 36px;
-    margin-top: 25px;
+    height: 100px;
+    margin-top: 15px;
   }
 
   > div {

@@ -20,14 +20,14 @@ export default function DeliveryModal({ data }) {
         </div>
         {data.start_dateFormated ? (
           <div>
-            <strong>Datas</strong>
+            <strong>Date</strong>
             <div>
-              <span>Retirada: </span>
+              <span>Withdrawal: </span>
               <small>{data.start_dateFormated}</small>
             </div>
             {data.end_dateFormated ? (
               <div>
-                <span>Entrega: </span>
+                <span>Delivery: </span>
                 <small>{data.end_dateFormated}</small>
               </div>
             ) : null}
@@ -35,7 +35,7 @@ export default function DeliveryModal({ data }) {
         ) : null}
         {data.signature ? (
           <div style={{ paddingBottom: '25px' }}>
-            <strong>Assinatura do destinatário</strong>
+            <strong>Recipient signature</strong>
             <img src={data.signature.url} alt="signature" />
           </div>
         ) : null}

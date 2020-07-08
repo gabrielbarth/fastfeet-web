@@ -45,6 +45,8 @@ export default function RecipientForm({ match }) {
         abortEarly: false,
       });
 
+      console.tron.log(id);
+
       if (id) {
         await api.put(`/recipients/${id}`, {
           name: data.name,
