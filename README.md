@@ -32,11 +32,11 @@ This application allows:
 
 ##  :computer: Interfaces view
 
-<div style="display:block; justify-content: center">
+<p align="center">
   <img alt="IMAGE.GIF" title="html-image" src="./app-images/web-gif1.gif" width="700px" />
   <img alt="IMAGE.GIF" title="html-image" src="./app-images/web-gif3.gif" width="700px"/>
   <img alt="IMAGE.GIF" title="html-image" src="./app-images/web-gif4.gif" width="700px" />
-</div>
+</p>
 
 
 ## :link: Project dependencies
@@ -65,7 +65,7 @@ This application allows:
 **Development dependencies:** <br>
 
 :heavy_check_mark: [**eslint**](https://eslint.org/) `// allows find and fix problems in your JavaScript code` <br>
-:heavy_check_mark: [**prettier**](https://prettier.io/)  `// sequelize client - ORM for SQL databases` <br>
+:heavy_check_mark: [**prettier**](https://prettier.io/) `// code formatter, makes code prettier` <br>
 
 
 ## :computer: Getting Started - Running on your machine
