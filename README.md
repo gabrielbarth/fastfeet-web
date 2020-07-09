@@ -19,7 +19,7 @@ Mobile aplication that allows delivery management for administrators. It was dev
 Aplicativo para permitir gestão de encomendas por administradores. Desenvolvido durante o desafio final do bootcamp GoStack10.
 
 
-## :mag_right: Overview / Visão geral
+## :mag_right: Overview
 
 This application allows:
 
@@ -30,7 +30,7 @@ This application allows:
 
 #### :rocket: See about this challange [here](https://github.com/Rocketseat/bootcamp-gostack-desafio-09)
 
-##  :computer:  Interfaces view
+##  :computer: Interfaces view
 
 <div style="display:block; justify-content: center">
   <img alt="IMAGE.GIF" title="html-image" src="./app-images/web-gif1.gif" width="700px" />
@@ -62,7 +62,7 @@ This application allows:
 :heavy_check_mark: [**react-toastify**](https://github.com/fkhadra/react-toastify) `//  allows adding notifications to your app with ease ` <br>
 
 
-**Bibliotecas de desenvolvimento utilizadas no projeto:** <br>
+**Development dependencies:** <br>
 
 :heavy_check_mark: [**eslint**](https://eslint.org/) `// allows find and fix problems in your JavaScript code` <br>
 :heavy_check_mark: [**prettier**](https://prettier.io/)  `// sequelize client - ORM for SQL databases` <br>
